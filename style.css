@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+    /* for all LI & LINKS */
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+}
+
+.navbar {
+    background-color: #191e24;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 480px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.links-container {
+    display: flex;
+    padding: 0 20px;
+}
+
+.nav-links {
+    margin-right: 30px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.nav-links a,
+.dropdown-links li a {
+    padding: 15px 10px;
+}
+
+#content-link {
+    position: relative;
+}
+
+#content-link:hover .dropdown-links {
+    display: block;
+}
+
+.dropdown-links {
+    position: absolute;
+    top: 100%;
+    background-color: #191e24;
+    width: 120px;
+    display: none;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 5px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.dropdown-links li {
+    border-top: 1px solid rgba(128, 128, 128, 0.281);
+    padding: 10px 20px;
+}
+
+li :hover {
+    color: #f1c40f;
+}
